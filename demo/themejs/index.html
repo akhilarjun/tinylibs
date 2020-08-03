@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Doc</title>
+    <style>
+    html, body {margin: 0; padding: 0; background: #eee;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        justify-content: space-around;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    body {min-height: 100vh;display: flex;align-items: center;justify-content: center;}
+    html[data-theme='dark'] {
+        filter: invert(1) hue-rotate(180deg);
+    }
+    html[data-theme="dark"] h1 span:after {
+        content: "DARK MODE"
+    }
+    html[data-theme="light"] h1 span:after {
+        content: "LIGHT MODE"
+    }
+    h1 img {
+        width: 50px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+        <span></span>
+        <img src="./sun.svg" 
+             data-light-src="./sun.svg" 
+             data-dark-src="./moon.svg" 
+             alt="light theme" 
+             id="theme-selector"
+             onclick="switchTheme(this)">
+        </h1>
+    <script src="../../themejs/theme.js" onload="setupThemeIcon()"></script>
+</body>
+</html>

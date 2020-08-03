@@ -3,6 +3,8 @@ A aggregation of small utility libraries I have created overtime 🐱‍👤
 
 ## Theme Js
 
+## [Demo](https://akhilarjun.github.io/tinylibs/demo/themejs)
+
 Helps you to
 - dynamically check what is the preferred color scheme
 - override theme in the application if the user wants to
