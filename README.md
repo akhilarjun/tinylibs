@@ -1,7 +1,7 @@
 # tinylibs
 A aggregation of small utility libraries I have created overtime 🐱‍👤
 
-## Theme Js
+## 1. Theme Js
 
 ## [Demo](https://akhilarjun.github.io/tinylibs/demo/themejs)
 
@@ -29,4 +29,23 @@ Call `switchTheme(this)` to switch between dark and light theme.
     id="theme-selector"
     onclick="switchTheme(this)">
 ```
-That is it 😀
+## 2. Prototyper
+
+## [Demo](https://akhilarjun.github.io/tinylibs/demo/prototyper)
+
+Helps you to create a toolbar that helps you to check your websites responsiveness in different devices
+
+Include the script and style
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/prototyper/prototyper.min.css">
+<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/prototyper/prototyper.min.js" onload="init()"></script>
+```
+
+If you want to exclude some devices from your demo just pass list of devices to the init function
+
+Eg
+```html
+<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/prototyper/prototyper.min.js" onload="init('watch, mobile')"></script>
+```
+
+Supported options for exclude list are `watch`, `mobile`, `tablet`, `desktop`.
