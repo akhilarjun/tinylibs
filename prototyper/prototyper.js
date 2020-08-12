@@ -79,7 +79,7 @@ const Devices = {
         const links = document.querySelectorAll('link');
         const styles = document.querySelectorAll('style');
         htmlBody.childNodes.forEach(childNode => {
-            if(childNode.nodeName === 'SCRIPT' && childNode.src.endsWith('prototyper.js')) {
+            if(childNode.nodeName === 'SCRIPT' && (childNode.src.endsWith('prototyper.js') || childNode.src.endsWith('prototyper.min.js'))) {
                 childNode.remove();
             }
         });
@@ -92,7 +92,7 @@ const Devices = {
 
         iframe.onload = () => {
             Array.from(links).forEach(link => {
-                if (!link.href.endsWith('prototyper.css')) {
+                if (!(link.href.endsWith('prototyper.css') || link.href.endsWith('prototyper.min.css'))) {
                     let newLink = link.cloneNode(true);
                     frames[0].document.head.appendChild(newLink);
                 }
