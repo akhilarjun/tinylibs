@@ -12,7 +12,7 @@ Helps you to
 
 Include the script
 ```html
-<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/themejs/theme.min.js" onload="setupThemeIcon()"></script>
+<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs/themejs/theme.min.js" onload="setupThemeIcon()"></script>
 ```
 
 Have an image tag with following id `theme-selector`.
@@ -37,15 +37,15 @@ Helps you to create a toolbar that helps you to check your websites responsivene
 
 Include the script and style
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/prototyper/prototyper.min.css">
-<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/prototyper/prototyper.min.js" onload="init()"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs/prototyper/prototyper.min.css">
+<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs/prototyper/prototyper.min.js" onload="init()"></script>
 ```
 
 If you want to exclude some devices from your demo just pass list of devices to the init function
 
 Eg
 ```html
-<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs@latest/prototyper/prototyper.min.js" onload="init('watch, mobile')"></script>
+<script src="https://cdn.jsdelivr.net/gh/akhilarjun/tinylibs/prototyper/prototyper.min.js" onload="init('watch, mobile')"></script>
 ```
 
 Supported options for exclude list are `watch`, `mobile`, `tablet`, `desktop`.
